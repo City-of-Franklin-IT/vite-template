@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+.footer {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 769px) {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    background-color: oklch(var(--b3));
+
+    p {
+      margin: auto;
+      color: hsl(var(--pc));
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: medium;
+      font-size: 1rem;
+      padding: 24px;
+      letter-spacing: .4rem;
+    }
+  }
+}

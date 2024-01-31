@@ -1,0 +1,21 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 20px 10px 80px 10px;
+  @media screen and (min-width: 1024px) {
+    width: 70%;
+    padding: 20px 10px 80px 10px;
+  };
+}

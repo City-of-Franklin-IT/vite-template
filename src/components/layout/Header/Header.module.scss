@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+.header {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: oklch(var(--p));
+    height: 80px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  @media screen and (min-width: 769px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: oklch(var(--p));
+    height: 60px;
+    padding: 0 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.title {
+  @media screen and (max-width: 768px) {
+    .title {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      height: 100%;
+    }
+  
+    h1 {
+      color: white;
+      font-family: 'Play', sans-serif;
+      font-size: 1.25rem;
+      text-align: center;
+      margin-top: auto;
+    }
+  
+    h2 {
+      color: oklch(var(--nc));
+      font-family: 'Play', sans-serif;
+      font-size: .85rem;
+      text-align: center;
+      margin-bottom: auto;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    padding: 4px 0 4px 0;
+    width: fit-content;
+  
+    h1 {
+      color: white;
+      font-family: 'Play', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      text-align: center;
+      letter-spacing: .25rem;
+      margin-bottom: auto;
+    }
+  
+    h2 {
+      color: oklch(var(--nc));
+      font-family: 'Play', sans-serif;
+      font-size: 13px;
+      text-align: center;
+      letter-spacing: .25rem;
+      margin-top: auto;
+      transform: translateX(-60px);
+    }
+  }
+}
